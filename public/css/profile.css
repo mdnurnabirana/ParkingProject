@@ -1,0 +1,263 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 20px 20px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+form {
+    width: 100%;
+    max-width: 900px;
+}
+
+form input[type="file"] {
+    margin: 10px 0;
+}
+form input[type="text"] {
+    margin: 10px 0;
+    margin-left: 20px;
+}
+form input[type="email"] {
+    margin: 10px 0;
+    margin-left: 20px;
+}
+.created-date {
+    margin-left: 15px;
+}
+
+form select {
+    font-size: 16px;
+    padding: 6px;
+    margin-left: 10px;
+}
+
+form select[name="gender"] {
+    width: 100%;
+    font-size: 18px;
+    margin-left:10px;
+}
+
+form select[name="vehicle_type"] {
+    width: 100%;
+    font-size: 18px;
+    margin-left:10px;
+}
+
+form .btn-primary {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form .btn-primary:hover {
+    background-color: #c0392b;
+}
+
+.left-section, .right-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    margin: 10px 0;
+}
+
+.left-section h2, .right-section h2 {
+    margin: 0 0 20px 0;
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+}
+
+.user-info, .vehicle-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.user-info img, .vehicle-info img {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    object-fit: cover;
+}
+
+.user-details, .vehicle-details {
+    flex: 1;
+}
+
+.user-details p, .vehicle-details p {
+    margin: 10px 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.user-details p span, .vehicle-details p span {
+    margin-right: 10px;
+    font-size: 20px;
+    color: #e74c3c; 
+}
+
+.user-details p input, .vehicle-details p input {
+    border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 5px;
+    width: calc(100% - 30px);
+    font-size: 16px;
+}
+
+.user-details p input:focus, .vehicle-details p input:focus {
+    border-color: #e74c3c;
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+        padding: 10px;
+    }
+
+    .left-section, .right-section {
+        margin: 0 0 20px 0;
+    }
+}
+
+.change-password-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    width: 100%;
+}
+
+.change-password-section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.change-password-section .form-group {
+    margin-bottom: 20px;
+}
+
+.change-password-section .form-group label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.change-password-section .form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.change-password-section button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.change-password-section button:hover {
+    background-color: #c0392b;
+}
+
+/* Alert Styles */
+.alert {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-error {
+    background-color: #f8d7da;
+    color: #721c24;
+};
